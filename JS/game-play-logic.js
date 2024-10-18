@@ -6,7 +6,7 @@ function dealCard(hand, location) {
 	let index = hand.length - 1;
 
 	// Create card image for card, hide initially so it doesn't impact transition
-	let cardImage = $("<img>").attr("class", "card").attr("src", "img/" + hand[index].src).hide();
+	let cardImage = $("<img>").attr("class", "card").attr("src", "./IMG" + hand[index].src).hide();
 	cardImage.attr("id", currentTurn + "-card-" + index);
 
 	// To create stacked card effect
@@ -28,7 +28,7 @@ function dealCard(hand, location) {
 	}	
 	// Second card only for dealer should show face down
 	if (dealerHand.length === 2 && currentTurn === "dealer") {
-		cardImage.attr("src", "img/card_back.png");
+		cardImage.attr("src", "../IMG/card_back.png");
 	}
 	updateVisibleHandTotals();
 	evaluateGameStatus();
