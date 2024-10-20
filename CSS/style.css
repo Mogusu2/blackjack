@@ -353,3 +353,14 @@ table {
         bottom: 10px;
     }
 }
+
+.page-footer {
+    background-color: #333;
+    padding: 20px 0;
+}
+
+.page-footer p {
+    margin: 0;
+    color: #ccc;
+    font-size: 14px;
+}
