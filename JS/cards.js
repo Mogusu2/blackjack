@@ -1,5 +1,5 @@
 //Full array of possible cards
-var cards;
+let cards;
 
 function getCards(){
 	cards = [
